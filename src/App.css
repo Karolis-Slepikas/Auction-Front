@@ -1,38 +1,237 @@
 .App {
-  text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toolbar {
+  background-color: #000000;
+  height: 100px;
+  width: auto;
+  border-radius: 5px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toolbar a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.toolbar a:hover {
+  color: #ff0000;
+}
+
+.profileInfo {
+  background-color: #cf5e5e;
+  font-size: 20px;
+  border: 5px solid rgb(253, 7, 7);
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+
+}
+
+/*Register and Login*/
+
+.registerField {
+  width: auto;
+  height: 400px;
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.registerField input {
+  border-radius: 10px;
+  border: 3px solid rgb(253, 7, 7);
+  font-size: 20px;
+  height: 30px;
+  width: 80%;
+}
+
+.registerField button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  background-color: #ff0000;
+  border-radius: 10px;
+  font-size: 20px;
+  color: aquamarine;
+ 
+}
+
+/*CreatePage*/
+
+.dropdown {
+  height: 30px;
+  width: 100%;
+}
+
+.dropdown select {
+  height: 30px;
+  width: 100%;
+}
+
+/*Auction List*/
+
+.auctionField {
+  background-color: #883434;
+  height: 300px;
+  width: 550px;
+  margin: 20px;
+
+}
+
+.bidButton {
+  height: 40px;
+  width: 60px;
+  border: none;
+  background-color: white;
+  color: #c5c3ec;
+}
+
+.bidButton:hover {
+  cursor: pointer;
+  background-color: #c5c3ec;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.auctionImg {
+  width: 100%;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteBtn {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: #c5c3ec;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: #c5c3ec;
+  color: white;
+}
+
+/*Product info page*/
+
+.productInfo {
+  height: 500px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.productInfo img {
+  margin-right: 30px;
+  height: 550px;
+}
+
+/*Bid page*/
+
+.bidField div input {
+  height: 30px;
+}
+
+.bidField div button {
+  height: 30px;
+  width: 150px;
+  margin: 20px;
+}
+
+.bidsCard {
+  width: 100%;
+  height: 50px;
+  background-color: #d0ceee;
+  margin: 10px;
+}
+
+/*Auction and bid history*/
+
+.auctionHistory {
+  width: auto;
+  height: 150px;
+  margin-top: 20px;
+  background-color: #d0ceee;
+  padding: 20px;
+}
+
+.historyImg {
+  height: 150px;
+  width: auto;
+}
+
+.bidHistory {
+  width: auto;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #d0ceee;
+  padding: 20px;
+}
+
+.bidHistory img {
+  height: 100%;
+}
+
+
+/*Main classes*/
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.j-ard {
+  justify-content: space-around;
+}
+
+.j-btw {
+  justify-content: space-between;
+}
+
+.flex1 {
+  flex: 1
+}
+
+.flex2 {
+  flex: 2
+}
+
+.flex3 {
+  flex: 5
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.mar-10 {
+  margin: 10px
+}
+
+.m-tl-30 {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
